@@ -53,7 +53,7 @@ class BinarySearchTree {
         }
         iterate.bind(this);
         iterate();
-        console.log(this.leafCount, this.nodeCount);
+        console.log(`Количество узлов: ${this.leafCount}, количество листьев: ${this.nodeCount}`);
     }
 }
 
