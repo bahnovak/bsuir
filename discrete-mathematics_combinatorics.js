@@ -6,7 +6,7 @@ const factorial = (n) => {
 
 
 const getCombinations = (lng = 2) => {
-    if (lng <= 0 || !Number.isInteger(lng) || typeof lng !== 'number') {
+    if (lng <= 0 || !Number.isInteger(lng)) { // Проверка на корректность данных
         throw new Error('Incorrect data. Expected: 1,2,3...')
     }
 
@@ -34,4 +34,4 @@ const getCombinations = (lng = 2) => {
     return results;  
 }
 
-getCombinations(3);
+getCombinations(4);
